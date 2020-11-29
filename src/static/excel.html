@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="static/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>excel-js</title>
+</head>
+<body>
+  <div id="root" class="app">
+    <div class="page page_type_excel">
+      <header class="page__header">
+        <nav class="menu">
+          <input class="input menu__input" type="text" name="title-input" value="Название таблицы"/>
+          
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">delete_outline</span>
+          </button>
+
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">exit_to_app</span>
+          </button>
+        </nav>
+
+        <div class="toolbar">
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">format_align_left</span>
+          </button>
+
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">format_align_justify</span>
+          </button>
+
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">format_align_right</span>
+          </button>
+
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">format_bold</span>
+          </button>
+
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">format_italic</span>
+          </button>
+
+          <button class="button button_only-icon" type="button">
+            <span class="button__icon material-icons">format_underlined</span>
+          </button>
+        </div>
+
+        <div class="formula">
+          <div class="formula__input" contenteditable spellcheck="false"></div>
+        </div>
+      </header>
+
+      <div class="page__body">
+        <div class="grid">
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading"></div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+            <div class="grid__cell grid__cell_type_heading">A</div>
+            <div class="grid__cell grid__cell_type_heading">B</div>
+            <div class="grid__cell grid__cell_type_heading">C</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">1</div>
+            <div class="grid__cell" contenteditable>A1</div>
+            <div class="grid__cell grid__cell_selected" contenteditable>B1</div>
+            <div class="grid__cell" contenteditable>C1</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+          <div class="grid__row">
+            <div class="grid__cell grid__cell_type_heading">2</div>
+            <div class="grid__cell" contenteditable>A2</div>
+            <div class="grid__cell" contenteditable>B2</div>
+            <div class="grid__cell" contenteditable>C2</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
