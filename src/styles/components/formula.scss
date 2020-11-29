@@ -1,0 +1,30 @@
+.formula {
+  padding-left: 50px;
+  height: 26px;
+  border-bottom: 1px solid gainsboro;
+  position: relative;
+
+  &::before {
+    content: 'fx';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    border-right: 1px solid gainsboro;
+    line-height: 26px;
+    color: gray;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.formula__input {
+  padding-left: 10px;
+  height: 26px;
+  line-height: 26px;
+  cursor: text;
+
+  &:focus {
+    outline: none;
+  }
+}

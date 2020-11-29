@@ -1,0 +1,24 @@
+.grid__row {
+  display: flex;
+  padding-left: 1px;
+}
+
+.grid__cell {
+  flex-shrink: 0;
+  width: 51px;
+  border: 1px solid gainsboro;
+  margin-top: -1px;
+  margin-left: -1px;
+  text-align: center;
+  outline: none;
+  height: 35px;
+}
+
+.grid__cell_selected {
+  outline: 2px solid lightseagreen;
+  z-index: 2;
+}
+
+.grid__cell_type_heading {
+  background-color: #f0f0f0;
+}

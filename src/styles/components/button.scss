@@ -1,0 +1,31 @@
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: gainsboro;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: gray;
+  }
+}
+
+.button_only-icon {
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  line-height: 30px;
+
+  &:focus {
+    color: white;
+  }
+}
+
+.button__icon {
+  font-size: 20px;
+  line-height: 30px;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '~normalize.css';
+
+@import './components/app.scss';
+@import './components/page.scss';
+@import './components/input.scss';
+@import './components/button.scss';
+@import './components/menu.scss';
+@import './components/toolbar.scss';
+@import './components/formula.scss';
+@import './components/grid.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
