@@ -1,9 +1,14 @@
+.grid {
+  overflow-x: auto;
+}
+
 .grid__row {
   display: flex;
   padding-left: 1px;
 }
 
 .grid__cell {
+  padding: 3px;
   flex-shrink: 0;
   width: 51px;
   border: 1px solid gainsboro;
@@ -11,7 +16,12 @@
   margin-left: -1px;
   text-align: center;
   outline: none;
-  height: 35px;
+  min-height: 18px;
+
+  &:first-child {
+    position: sticky;
+    left: 0;
+  }
 }
 
 .grid__cell_selected {
