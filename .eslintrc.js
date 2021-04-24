@@ -8,6 +8,7 @@ module.exports = {
   plugins: ['@babel'],
   extends: ['eslint:recommended', 'google'],
   rules: {
+    'max-len': 'off',
     'require-jsdoc': 'off',
     'object-curly-spacing': ['error', 'always'],
     '@babel/no-invalid-this': 'off',
