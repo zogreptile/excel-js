@@ -2,6 +2,9 @@ const METHOD_NAMES = {
   click: 'onClick',
   input: 'onInput',
   change: 'onChange',
+  mousedown: 'onMousedown',
+  mousemove: 'onMousemove',
+  mouseup: 'onMouseup',
 };
 
 export class DOMListener {
