@@ -1,10 +1,11 @@
 // CSS className utility
 
-export function cn(
-  baseClass,
-  { mods = {}, mix = '' } = {},
-  { mods: defaultMods = {}, mix: defaultMix = '' } = {}
-) {
+export function cn(baseClass, options = {}, defaultOptions = {}) {
+  const mods = options.mods || {};
+  const mix = options.mix || '';
+  const defaultMods = defaultOptions.mods || {};
+  const defaultMix = defaultOptions.mix || '';
+
   const modsEntries = Object.entries({ ...defaultMods, ...mods });
   const mixes = `${defaultMix} ${mix}`;
 
